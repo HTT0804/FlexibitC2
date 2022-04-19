@@ -13,7 +13,7 @@ namespace Flexibit {
     * To enable compatibility towards robotbit
     */
     //% block
-    export function highPowerDriver(): void {
+    export function robotbitInitialization(): void {
 
         let i2c_id = 40
         let dr4 = 0x3008
