@@ -16,8 +16,8 @@ namespace Flexibit {
     export function highPowerDriver(): void {
 
         let i2c_id = 40
-        let dr4 = 0x3008
-        let dr10 = 0x2402
+        let dr4 = 0x2008 /* send 32(dex) to reg A8 */
+        let dr10 = 0x2402 /* send 36(dex) to reg A2 */
         pins.i2cWriteNumber(
             i2c_id,
             dr4,
