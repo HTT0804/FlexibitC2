@@ -27,6 +27,14 @@ namespace Flexibit {
             false
         )
         basic.pause(500)
+ 
+        pins.i2cWriteNumber(
+            i2c_id,
+            dr5,
+            NumberFormat.UInt16LE,
+            false
+        )
+        basic.pause(500)
         
         pins.i2cWriteNumber(
             i2c_id,
